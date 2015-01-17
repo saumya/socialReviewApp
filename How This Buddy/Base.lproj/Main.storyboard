@@ -1391,10 +1391,10 @@
             </objects>
             <point key="canvasLocation" x="1446" y="-2569"/>
         </scene>
-        <!--View Controller - Details-->
+        <!--Ray Opinion Details View Controller - Details-->
         <scene sceneID="Kbr-Lt-bPs">
             <objects>
-                <viewController id="Koi-vO-INE" sceneMemberID="viewController">
+                <viewController id="Koi-vO-INE" customClass="RayOpinionDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b9Q-kl-GHo"/>
                         <viewControllerLayoutGuide type="bottom" id="dAD-SB-TVc"/>
