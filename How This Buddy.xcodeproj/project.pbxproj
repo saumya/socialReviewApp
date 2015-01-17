@@ -36,6 +36,7 @@
 		992DE0901A3C38FB007EA014 /* btnSize.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 992DE08F1A3C38FB007EA014 /* btnSize.jpg */; };
 		99377ED71A57B2010041E8CC /* RayRegistrationConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99377ED61A57B2010041E8CC /* RayRegistrationConfirmViewController.m */; };
 		99377EDA1A57F5360041E8CC /* RayRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99377ED91A57F5360041E8CC /* RayRegistrationViewController.m */; };
+		993832501A6AEA7C0085F9F3 /* RayTableViewCellThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938324F1A6AEA7C0085F9F3 /* RayTableViewCellThree.m */; };
 		9964675B1A5902C600630D47 /* RayRequestLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */; };
 		996467621A5929F800630D47 /* RayTableViewCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 996467611A5929F800630D47 /* RayTableViewCellOne.m */; };
 		9979B38A1A6AAE83001E49B3 /* RayOpinionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */; };
@@ -101,6 +102,8 @@
 		99377ED61A57B2010041E8CC /* RayRegistrationConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayRegistrationConfirmViewController.m; sourceTree = "<group>"; };
 		99377ED81A57F5360041E8CC /* RayRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayRegistrationViewController.h; sourceTree = "<group>"; };
 		99377ED91A57F5360041E8CC /* RayRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayRegistrationViewController.m; sourceTree = "<group>"; };
+		9938324E1A6AEA7C0085F9F3 /* RayTableViewCellThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTableViewCellThree.h; sourceTree = "<group>"; };
+		9938324F1A6AEA7C0085F9F3 /* RayTableViewCellThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayTableViewCellThree.m; sourceTree = "<group>"; };
 		996467591A5902C600630D47 /* RayRequestLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayRequestLaunchViewController.h; sourceTree = "<group>"; };
 		9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayRequestLaunchViewController.m; sourceTree = "<group>"; };
 		996467601A5929F800630D47 /* RayTableViewCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTableViewCellOne.h; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 				996467611A5929F800630D47 /* RayTableViewCellOne.m */,
 				9979B38B1A6AB029001E49B3 /* RayTableViewCellTwo.h */,
 				9979B38C1A6AB029001E49B3 /* RayTableViewCellTwo.m */,
+				9938324E1A6AEA7C0085F9F3 /* RayTableViewCellThree.h */,
+				9938324F1A6AEA7C0085F9F3 /* RayTableViewCellThree.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				9964675B1A5902C600630D47 /* RayRequestLaunchViewController.m in Sources */,
 				9979B38D1A6AB029001E49B3 /* RayTableViewCellTwo.m in Sources */,
 				99377EDA1A57F5360041E8CC /* RayRegistrationViewController.m in Sources */,
+				993832501A6AEA7C0085F9F3 /* RayTableViewCellThree.m in Sources */,
 				9927F0F71A3B8AAD001781B3 /* RayViewController.m in Sources */,
 				9927F0F11A3B8AAD001781B3 /* RayAppDelegate.m in Sources */,
 			);

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "RayTableViewCellTwo.h"
+#import "RayTableViewCellThree.h"
 
 @interface RayOpinionDetailsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,retain) NSArray *requestArray;
+@property (nonatomic) BOOL isOpinionView;
 
 - (IBAction)onOpinionButtonSetSelect:(id)sender;
 

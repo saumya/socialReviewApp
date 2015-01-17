@@ -15,6 +15,8 @@
 @implementation RayOpinionDetailsViewController
 
 @synthesize requestArray;
+@synthesize isOpinionView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -61,6 +63,7 @@
                               @"isOn":@"no"
                               }
                           ];
+    self.isOpinionView = TRUE;
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,41 +96,60 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //UITableViewCell *cell;
-    //identifier : idUser1
-    //
-    /*
-     static NSString *cellIdentifier = @"cell";
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-     if (cell==nil) {
-     cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] ;
-     }
-     //
-     cell.textLabel.text = [self.requestArray objectAtIndex:indexPath.row];
-     */
-    static NSString *cellIdentifier = @"idUser1";
-    RayTableViewCellTwo *cell = (RayTableViewCellTwo *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell==nil) {
-        //cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] ;
-        cell = [[RayTableViewCellTwo alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    NSLog(@"isOpinioinView= %hhd",self.isOpinionView);
+    
+    if(self.isOpinionView==TRUE){
+        NSLog(@"TRUE");
+        static NSString *cellIdentifier = @"idUser1";
+        RayTableViewCellTwo *cell = (RayTableViewCellTwo *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (cell==nil) {
+            //cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] ;
+            cell = [[RayTableViewCellTwo alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        //
+        NSObject *obj = [self.requestArray objectAtIndex:indexPath.row];
+        //cell.nameLabel.text = [self.requestArray objectAtIndex:indexPath.row];
+        //cell.phoneLabel.text = @"000-111-222";
+        cell.nameLabel.text = [obj valueForKey:@"name"];
+        cell.phoneLabel.text = [obj valueForKey:@"phone"];
+        return cell;
+    }else{
+        NSLog(@"FALSE");
+        static NSString *cellIdentifier = @"idUser2";
+        RayTableViewCellThree *cell = (RayTableViewCellThree *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (cell==nil) {
+            cell = [[RayTableViewCellThree alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        NSObject *obj = [self.requestArray objectAtIndex:indexPath.row];
+        cell.nameLabel.text = [obj valueForKey:@"name"];
+        cell.phoneLabel.text = [obj valueForKey:@"phone"];
+        return cell;    
     }
-    //
-    NSObject *obj = [self.requestArray objectAtIndex:indexPath.row];
     
-    //cell.nameLabel.text = [self.requestArray objectAtIndex:indexPath.row];
-    //cell.phoneLabel.text = @"000-111-222";
-    cell.nameLabel.text = [obj valueForKey:@"name"];
-    cell.phoneLabel.text = [obj valueForKey:@"phone"];
     
     //
-    return cell;
+    //return cell;
 }
 
 
 #pragma mark - Event Handlers
 - (void)onOpinionButtonSetSelect:(id)sender
 {
-    NSLog(@"On Tap");
+    UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
+    NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
+    
+    if (selectedSegment == 0) {
+        //toggle the correct view to be visible
+        //[firstView setHidden:NO];
+        //[secondView setHidden:YES];
+        self.isOpinionView = TRUE;
+    }else{
+        //toggle the correct view to be visible
+        //[firstView setHidden:YES];
+        //[secondView setHidden:NO];
+        self.isOpinionView = FALSE;
+    }
+    //re-render the List
 }
 
 

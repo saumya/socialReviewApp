@@ -1563,7 +1563,7 @@
                                             <outlet property="phoneLabel" destination="afo-QT-ZD7" id="eMl-Cd-8MY"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idUser2" id="6sj-8O-xHL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idUser2" id="6sj-8O-xHL" customClass="RayTableViewCellThree">
                                         <rect key="frame" x="0.0" y="57" width="307" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6sj-8O-xHL" id="ndJ-bc-LMW">
@@ -1586,6 +1586,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="r0I-ef-zsn" id="hJu-Uv-Y89"/>
+                                            <outlet property="phoneLabel" destination="Syh-h9-ldy" id="a83-cd-TH1"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idUser3" id="qNM-sV-6j4">
                                         <rect key="frame" x="0.0" y="92" width="307" height="35"/>
