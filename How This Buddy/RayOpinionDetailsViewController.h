@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RayOpinionDetailsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
-
-
-@property (nonatomic,retain) NSArray *requestArray;
+@interface RayOpinionDetailsViewController : UIViewController
 
 @end

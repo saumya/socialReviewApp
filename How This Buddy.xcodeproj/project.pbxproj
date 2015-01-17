@@ -38,6 +38,7 @@
 		99377EDA1A57F5360041E8CC /* RayRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99377ED91A57F5360041E8CC /* RayRegistrationViewController.m */; };
 		9964675B1A5902C600630D47 /* RayRequestLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */; };
 		996467621A5929F800630D47 /* RayTableViewCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 996467611A5929F800630D47 /* RayTableViewCellOne.m */; };
+		9979B38A1A6AAE83001E49B3 /* RayOpinionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */; };
 		99BEDAB81A435AA200D41013 /* like_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDAB71A435AA200D41013 /* like_5.png */; };
 		99BEDABA1A435E7200D41013 /* like_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDAB91A435E7200D41013 /* like_1.png */; };
 		99BEDABC1A435E7D00D41013 /* do_not_like_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDABB1A435E7D00D41013 /* do_not_like_1.png */; };
@@ -103,6 +104,8 @@
 		9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayRequestLaunchViewController.m; sourceTree = "<group>"; };
 		996467601A5929F800630D47 /* RayTableViewCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTableViewCellOne.h; sourceTree = "<group>"; };
 		996467611A5929F800630D47 /* RayTableViewCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayTableViewCellOne.m; sourceTree = "<group>"; };
+		9979B3881A6AAE83001E49B3 /* RayOpinionDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayOpinionDetailsViewController.h; sourceTree = "<group>"; };
+		9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayOpinionDetailsViewController.m; sourceTree = "<group>"; };
 		99BEDAB71A435AA200D41013 /* like_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_5.png; sourceTree = "<group>"; };
 		99BEDAB91A435E7200D41013 /* like_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_1.png; sourceTree = "<group>"; };
 		99BEDABB1A435E7D00D41013 /* do_not_like_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = do_not_like_1.png; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				99377ED91A57F5360041E8CC /* RayRegistrationViewController.m */,
 				996467591A5902C600630D47 /* RayRequestLaunchViewController.h */,
 				9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */,
+				9979B3881A6AAE83001E49B3 /* RayOpinionDetailsViewController.h */,
+				9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				9927F0ED1A3B8AAD001781B3 /* main.m in Sources */,
 				99377ED71A57B2010041E8CC /* RayRegistrationConfirmViewController.m in Sources */,
 				996467621A5929F800630D47 /* RayTableViewCellOne.m in Sources */,
+				9979B38A1A6AAE83001E49B3 /* RayOpinionDetailsViewController.m in Sources */,
 				9964675B1A5902C600630D47 /* RayRequestLaunchViewController.m in Sources */,
 				99377EDA1A57F5360041E8CC /* RayRegistrationViewController.m in Sources */,
 				9927F0F71A3B8AAD001781B3 /* RayViewController.m in Sources */,
