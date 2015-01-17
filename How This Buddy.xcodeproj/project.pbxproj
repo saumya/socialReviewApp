@@ -41,6 +41,7 @@
 		996467621A5929F800630D47 /* RayTableViewCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 996467611A5929F800630D47 /* RayTableViewCellOne.m */; };
 		9979B38A1A6AAE83001E49B3 /* RayOpinionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */; };
 		9979B38D1A6AB029001E49B3 /* RayTableViewCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9979B38C1A6AB029001E49B3 /* RayTableViewCellTwo.m */; };
+		999ACE0E1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999ACE0D1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.m */; };
 		99BEDAB81A435AA200D41013 /* like_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDAB71A435AA200D41013 /* like_5.png */; };
 		99BEDABA1A435E7200D41013 /* like_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDAB91A435E7200D41013 /* like_1.png */; };
 		99BEDABC1A435E7D00D41013 /* do_not_like_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BEDABB1A435E7D00D41013 /* do_not_like_1.png */; };
@@ -112,6 +113,8 @@
 		9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayOpinionDetailsViewController.m; sourceTree = "<group>"; };
 		9979B38B1A6AB029001E49B3 /* RayTableViewCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTableViewCellTwo.h; sourceTree = "<group>"; };
 		9979B38C1A6AB029001E49B3 /* RayTableViewCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayTableViewCellTwo.m; sourceTree = "<group>"; };
+		999ACE0C1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayOpinionGivenDetailViewController.h; sourceTree = "<group>"; };
+		999ACE0D1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayOpinionGivenDetailViewController.m; sourceTree = "<group>"; };
 		99BEDAB71A435AA200D41013 /* like_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_5.png; sourceTree = "<group>"; };
 		99BEDAB91A435E7200D41013 /* like_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_1.png; sourceTree = "<group>"; };
 		99BEDABB1A435E7D00D41013 /* do_not_like_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = do_not_like_1.png; sourceTree = "<group>"; };
@@ -282,6 +285,8 @@
 				9964675A1A5902C600630D47 /* RayRequestLaunchViewController.m */,
 				9979B3881A6AAE83001E49B3 /* RayOpinionDetailsViewController.h */,
 				9979B3891A6AAE83001E49B3 /* RayOpinionDetailsViewController.m */,
+				999ACE0C1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.h */,
+				999ACE0D1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				9979B38D1A6AB029001E49B3 /* RayTableViewCellTwo.m in Sources */,
 				99377EDA1A57F5360041E8CC /* RayRegistrationViewController.m in Sources */,
 				993832501A6AEA7C0085F9F3 /* RayTableViewCellThree.m in Sources */,
+				999ACE0E1A6AFB590091EBA0 /* RayOpinionGivenDetailViewController.m in Sources */,
 				9927F0F71A3B8AAD001781B3 /* RayViewController.m in Sources */,
 				9927F0F11A3B8AAD001781B3 /* RayAppDelegate.m in Sources */,
 			);
