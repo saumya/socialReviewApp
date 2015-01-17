@@ -16,5 +16,6 @@
 @property (nonatomic) BOOL isOpinionView;
 
 - (IBAction)onOpinionButtonSetSelect:(id)sender;
+@property (nonatomic, strong) IBOutlet UITableView *myTableView;
 
 @end

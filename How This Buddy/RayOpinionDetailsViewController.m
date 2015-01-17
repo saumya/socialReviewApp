@@ -16,6 +16,7 @@
 
 @synthesize requestArray;
 @synthesize isOpinionView;
+@synthesize myTableView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -150,6 +151,7 @@
         self.isOpinionView = FALSE;
     }
     //re-render the List
+    [self.myTableView reloadData];
 }
 
 
