@@ -123,4 +123,12 @@
     return cell;
 }
 
+
+#pragma mark - Event Handlers
+- (void)onOpinionButtonSetSelect:(id)sender
+{
+    NSLog(@"On Tap");
+}
+
+
 @end

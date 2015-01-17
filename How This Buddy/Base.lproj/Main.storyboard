@@ -1520,6 +1520,9 @@
                                     <segment title="Response"/>
                                     <segment title="No Response"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onOpinionButtonSetSelect:" destination="Koi-vO-INE" eventType="valueChanged" id="SKQ-nx-fFZ"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nvK-iU-pB6">
                                 <rect key="frame" x="7" y="351" width="307" height="180"/>

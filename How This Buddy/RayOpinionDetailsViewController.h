@@ -13,4 +13,6 @@
 
 @property (nonatomic,retain) NSArray *requestArray;
 
+- (IBAction)onOpinionButtonSetSelect:(id)sender;
+
 @end
