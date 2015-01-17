@@ -1526,7 +1526,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idUser1" id="pTr-zd-2BR" customClass="RayTableViewCellOne">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idUser1" id="pTr-zd-2BR" customClass="RayTableViewCellTwo">
                                         <rect key="frame" x="0.0" y="22" width="307" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTr-zd-2BR" id="wsk-La-ahg">
@@ -1623,8 +1623,8 @@
                                 </prototypes>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="WPo-tk-jrR" id="geM-96-Hk0"/>
-                                    <outlet property="delegate" destination="WPo-tk-jrR" id="Peu-VD-K3e"/>
+                                    <outlet property="dataSource" destination="Koi-vO-INE" id="8Rw-st-ILs"/>
+                                    <outlet property="delegate" destination="Koi-vO-INE" id="qSf-dd-69n"/>
                                 </connections>
                             </tableView>
                         </subviews>

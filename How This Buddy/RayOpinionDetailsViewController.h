@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RayTableViewCellTwo.h"
 
-@interface RayOpinionDetailsViewController : UIViewController
+@interface RayOpinionDetailsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,retain) NSArray *requestArray;
 
 @end
