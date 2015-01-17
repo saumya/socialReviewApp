@@ -13,6 +13,8 @@
 @interface RayOpinionDetailsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,retain) NSArray *requestArray;
+@property (nonatomic,retain) NSArray *noResponseArray;
+
 @property (nonatomic) BOOL isOpinionView;
 
 - (IBAction)onOpinionButtonSetSelect:(id)sender;

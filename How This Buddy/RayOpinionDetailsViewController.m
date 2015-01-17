@@ -15,6 +15,8 @@
 @implementation RayOpinionDetailsViewController
 
 @synthesize requestArray;
+@synthesize noResponseArray;
+
 @synthesize isOpinionView;
 @synthesize myTableView;
 
@@ -64,6 +66,42 @@
                               @"isOn":@"no"
                               }
                           ];
+    //
+    self.noResponseArray = @[
+                          @{
+                              @"name": @"Jumbo Shoes",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Nike Cap",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Adidas Shirt",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Hike Racket",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Kemp Bike",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Inn Cap",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Kool Shoes",
+                              @"phone":@"Invite Again"
+                              },
+                          @{
+                              @"name": @"Jumbo Basket",
+                              @"phone":@"Invite Again"
+                              }
+                          ];
+    //
     self.isOpinionView = TRUE;
 }
 
@@ -92,36 +130,37 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.requestArray.count;
+    NSUInteger i;
+    if(self.isOpinionView==TRUE){
+        i = self.requestArray.count;
+    }else{
+        i = self.noResponseArray.count;
+    }
+    return i;
+    //return self.requestArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"isOpinioinView= %hhd",self.isOpinionView);
+    //NSLog(@"isOpinioinView= %hhd",self.isOpinionView);
     
     if(self.isOpinionView==TRUE){
-        NSLog(@"TRUE");
         static NSString *cellIdentifier = @"idUser1";
         RayTableViewCellTwo *cell = (RayTableViewCellTwo *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (cell==nil) {
-            //cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] ;
             cell = [[RayTableViewCellTwo alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
-        //
         NSObject *obj = [self.requestArray objectAtIndex:indexPath.row];
-        //cell.nameLabel.text = [self.requestArray objectAtIndex:indexPath.row];
-        //cell.phoneLabel.text = @"000-111-222";
         cell.nameLabel.text = [obj valueForKey:@"name"];
         cell.phoneLabel.text = [obj valueForKey:@"phone"];
         return cell;
     }else{
-        NSLog(@"FALSE");
         static NSString *cellIdentifier = @"idUser2";
         RayTableViewCellThree *cell = (RayTableViewCellThree *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (cell==nil) {
             cell = [[RayTableViewCellThree alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
-        NSObject *obj = [self.requestArray objectAtIndex:indexPath.row];
+        NSObject *obj = [self.noResponseArray objectAtIndex:indexPath.row];
         cell.nameLabel.text = [obj valueForKey:@"name"];
         cell.phoneLabel.text = [obj valueForKey:@"phone"];
         return cell;    
