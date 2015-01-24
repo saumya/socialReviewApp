@@ -520,7 +520,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6B2-D2-vES" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="UbD-sv-jWH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-865"/>
+            <point key="canvasLocation" x="492" y="-1575"/>
         </scene>
         <!--Registration-->
         <scene sceneID="TAr-4p-bgO">

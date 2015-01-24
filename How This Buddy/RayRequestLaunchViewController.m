@@ -81,22 +81,6 @@
 }
 */
 
-#pragma mark - segue unwind
-- (IBAction)unwindToHome1:(UIStoryboardSegue *)unwindSegue
-{
-    NSLog(@"unwindToHome");
-    /*
-     UIViewController* sourceViewController = unwindSegue.sourceViewController;
-     if ([sourceViewController isKindOfClass:[BlueViewController class]])
-     {
-     NSLog(@"Coming from BLUE!");
-     }
-     else if ([sourceViewController isKindOfClass:[GreenViewController class]])
-     {
-     NSLog(@"Coming from GREEN!");
-     }
-     */
-}
 
 #pragma mark - Customising the TableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
