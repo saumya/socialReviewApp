@@ -31,4 +31,11 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)onDetail:(id)sender
+{
+    NSLog(@"onDetail");
+    //"segueToDetailView1"
+    //[self performSegueWithIdentifier:@"segueToDetailView1" sender:self];
+}
+
 @end
