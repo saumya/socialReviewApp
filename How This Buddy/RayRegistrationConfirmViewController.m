@@ -51,7 +51,7 @@
 {
     NSLog(@"onSubmitClick");
     //[self performSegueWithIdentifier:@"segueBackToRegistrationView" sender:self];
-    //[self performSegueWithIdentifier:@"segueBackToHomeView1" sender:self];
+    [self performSegueWithIdentifier:@"segueToHome" sender:self];
     
     NSLog(@"Done with the Segue call");
 }

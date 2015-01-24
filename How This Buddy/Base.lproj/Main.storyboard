@@ -500,24 +500,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G7-iN-pOd">
-                                <rect key="frame" x="114" y="279" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-GC-k8J">
+                                <rect key="frame" x="130" y="298" width="60" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Submit">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSubmitClick:" destination="m6F-7k-Byr" eventType="touchUpInside" id="R1q-Oq-woZ"/>
+                                    <action selector="onSubmitClick:" destination="m6F-7k-Byr" eventType="touchUpInside" id="UeR-EP-wNr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="UbD-sv-jWH" kind="unwind" identifier="segueToHome" unwindAction="unwindToHome1:" id="Nbr-Pj-U6Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6B2-D2-vES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UbD-sv-jWH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="974" y="-3242"/>
+            <point key="canvasLocation" x="902" y="-865"/>
         </scene>
         <!--Registration-->
         <scene sceneID="TAr-4p-bgO">
