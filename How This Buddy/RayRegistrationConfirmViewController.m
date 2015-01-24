@@ -45,14 +45,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 #pragma mark - Customisation
 - (IBAction)onSubmitClick:(id)sender
 {
     NSLog(@"onSubmitClick");
     //[self performSegueWithIdentifier:@"segueBackToRegistrationView" sender:self];
-    [self performSegueWithIdentifier:@"segueBackToHomeView" sender:self];
+    [self performSegueWithIdentifier:@"segueBackToHomeView1" sender:self];
     NSLog(@"Done with the Segue call");
 }
+
 
 
 

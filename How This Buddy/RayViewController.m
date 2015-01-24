@@ -27,20 +27,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 - (IBAction)unwindToHome:(UIStoryboardSegue *)unwindSegue
 {
-    NSLog(@"unwindToHome");
-    /*
      UIViewController* sourceViewController = unwindSegue.sourceViewController;
      if ([sourceViewController isKindOfClass:[BlueViewController class]])
      {
-     NSLog(@"Coming from BLUE!");
+         NSLog(@"Coming from BLUE!");
      }
      else if ([sourceViewController isKindOfClass:[GreenViewController class]])
      {
-     NSLog(@"Coming from GREEN!");
+         NSLog(@"Coming from GREEN!");
      }
-     */
 }
+*/
 
 @end
