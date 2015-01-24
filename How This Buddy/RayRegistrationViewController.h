@@ -10,4 +10,6 @@
 
 @interface RayRegistrationViewController : UIViewController
 
+- (IBAction)onSubmitClick:(id)sender;
+
 @end

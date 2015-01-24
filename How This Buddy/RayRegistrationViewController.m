@@ -14,6 +14,8 @@
 
 @implementation RayRegistrationViewController
 
+bool confirmed = NO;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +30,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"RayRegistrationViewController:viewDidLoad");
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"RayRegistrationViewController:viewWillAppear");
+    if(confirmed==YES){
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,6 +72,14 @@
         NSLog(@"Coming from GREEN!");
     }
     */
+    //[self performSegueWithIdentifier:@"unwindToContainerVC" sender:self];
+    //[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)onSubmitClick:(id)sender
+{
+    confirmed = YES;
+    [self performSegueWithIdentifier:@"idConfirmView" sender:self];
 }
 
 

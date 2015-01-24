@@ -51,8 +51,11 @@
 {
     NSLog(@"onSubmitClick");
     //[self performSegueWithIdentifier:@"segueBackToRegistrationView" sender:self];
-    [self performSegueWithIdentifier:@"segueToHome" sender:self];
+    //[self performSegueWithIdentifier:@"segueToHome" sender:self];
     
+    //[self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //
     NSLog(@"Done with the Segue call");
 }
 
