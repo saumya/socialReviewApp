@@ -1897,15 +1897,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="299" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="BxE-U3-xhR">
-                                                    <rect key="frame" x="170" y="3" width="40" height="60"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_not_sure.png" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-hC-i1b">
-                                                    <rect key="frame" x="212" y="4" width="40" height="60"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_do_not_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xo5-Lz-M5i">
-                                                    <rect key="frame" x="255" y="4" width="40" height="60"/>
-                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoe_thumb_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0n4-0f-2cg">
                                                     <rect key="frame" x="3" y="4" width="60" height="58"/>
                                                 </imageView>
@@ -1950,6 +1941,33 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwl-Uw-0zg">
+                                                    <rect key="frame" x="176" y="18" width="40" height="36"/>
+                                                    <state key="normal" image="small_like.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="onLike:" destination="mQw-tQ-m2M" eventType="touchUpInside" id="iVe-OL-oi0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx7-b8-230">
+                                                    <rect key="frame" x="214" y="18" width="40" height="36"/>
+                                                    <state key="normal" image="small_not_sure.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="onNotSure:" destination="mQw-tQ-m2M" eventType="touchUpInside" id="CHF-y1-Hou"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQi-Ut-OlI">
+                                                    <rect key="frame" x="251" y="18" width="40" height="36"/>
+                                                    <state key="normal" image="small_do_not_like.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="onNotLike:" destination="mQw-tQ-m2M" eventType="touchUpInside" id="8va-xC-ZeE"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>

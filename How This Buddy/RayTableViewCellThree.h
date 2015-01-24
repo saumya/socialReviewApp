@@ -13,4 +13,8 @@
 @property (weak,nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak,nonatomic) IBOutlet UILabel *phoneLabel;
 
+- (IBAction)onLike:(id)sender;
+- (IBAction)onNotSure:(id)sender;
+- (IBAction)onNotLike:(id)sender;
+
 @end
