@@ -1897,14 +1897,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="299" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="BxE-U3-xhR">
-                                                    <rect key="frame" x="170" y="3" width="44" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="BxE-U3-xhR">
+                                                    <rect key="frame" x="170" y="3" width="40" height="60"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_not_sure.png" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-hC-i1b">
-                                                    <rect key="frame" x="212" y="4" width="44" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_not_sure.png" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-hC-i1b">
+                                                    <rect key="frame" x="212" y="4" width="40" height="60"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_do_not_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xo5-Lz-M5i">
-                                                    <rect key="frame" x="255" y="4" width="44" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_do_not_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xo5-Lz-M5i">
+                                                    <rect key="frame" x="255" y="4" width="40" height="60"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoe_thumb_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0n4-0f-2cg">
                                                     <rect key="frame" x="3" y="4" width="60" height="58"/>
