@@ -38,6 +38,7 @@ bool confirmed = NO;
     NSLog(@"RayRegistrationViewController:viewWillAppear");
     if(confirmed==YES){
         [self.navigationController popViewControllerAnimated:YES];
+        confirmed = NO;
     }
 }
 
