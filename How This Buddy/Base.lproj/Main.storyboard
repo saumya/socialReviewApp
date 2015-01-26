@@ -1954,9 +1954,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="299" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoe_thumb_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0n4-0f-2cg">
-                                                    <rect key="frame" x="3" y="4" width="60" height="58"/>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-3Q-a4x">
                                                     <rect key="frame" x="66" y="36" width="103" height="26"/>
                                                     <color key="backgroundColor" red="0.87213408439999995" green="0.87600846919999997" blue="0.88763162360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2025,6 +2022,12 @@
                                                         <action selector="onNotLike:" destination="mQw-tQ-m2M" eventType="touchUpInside" id="8va-xC-ZeE"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-3T-Lm1">
+                                                    <rect key="frame" x="3" y="3" width="60" height="58"/>
+                                                    <state key="normal" backgroundImage="shoe_thumb_1.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2044,7 +2047,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6Z-ct-FUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="-1883"/>
+            <point key="canvasLocation" x="2005" y="-1208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DwB-A9-v0W">
