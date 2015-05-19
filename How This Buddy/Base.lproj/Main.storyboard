@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nb9-tP-1So">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nb9-tP-1So">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -206,7 +206,7 @@
             </objects>
             <point key="canvasLocation" x="1446" y="-3242"/>
         </scene>
-        <!--HowZThisBuddy-->
+        <!--Table View Controller-->
         <scene sceneID="AaS-db-dY8">
             <objects>
                 <tableViewController id="iGs-vz-G2M" sceneMemberID="viewController">
@@ -405,11 +405,23 @@
                             <outlet property="delegate" destination="iGs-vz-G2M" id="nN4-Sx-cCT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="HowZThisBuddy" id="hlD-pR-u1V"/>
+                    <navigationItem key="navigationItem" id="hlD-pR-u1V">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="STE-4e-udZ">
+                            <rect key="frame" x="8" y="6" width="304" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XdX-7o-VPs">
+                                    <rect key="frame" x="-8" y="0.0" width="304" height="33"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d79-y1-9YR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-164"/>
+            <point key="canvasLocation" x="811" y="-164"/>
         </scene>
         <!--Settings-->
         <scene sceneID="CxX-Oq-X8B">
@@ -944,6 +956,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="9gl-fJ-HPP" kind="modal" modalTransitionStyle="flipHorizontal" id="3mJ-dY-WWW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSl-eH-nvE">
                                         <rect key="frame" x="142" y="139" width="126" height="24"/>
@@ -1018,7 +1033,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXT-Ah-eL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="-1201"/>
+            <point key="canvasLocation" x="2017" y="-1209"/>
         </scene>
         <!--Opinions Received-->
         <scene sceneID="jBp-iH-Jgw">
@@ -1390,6 +1405,11 @@
                                                     <rect key="frame" x="6" y="6" width="139" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01-17-2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kle-ei-QPd">
+                                                    <rect key="frame" x="183" y="8" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1920,6 +1940,9 @@
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="9gl-fJ-HPP" kind="modal" modalTransitionStyle="flipHorizontal" id="TBR-O6-nLw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1940,7 +1963,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="tAV-MO-U5k" kind="push" id="bjT-fW-0rE"/>
+                                                        <segue destination="9gl-fJ-HPP" kind="modal" modalTransitionStyle="flipHorizontal" id="DKK-C4-05g"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJd-iR-Zcc">
@@ -2046,7 +2069,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6Z-ct-FUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005" y="-1208"/>
+            <point key="canvasLocation" x="2017" y="-1883"/>
+        </scene>
+        <!--Ray Comments View Controller-->
+        <scene sceneID="2vy-ci-wHz">
+            <objects>
+                <viewController id="9gl-fJ-HPP" customClass="RayCommentsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Wf-JS-z4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="HcI-FD-IkC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="av2-kO-bV8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie_example_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LMM-H8-cFi">
+                                <rect key="frame" x="0.0" y="-27" width="320" height="532"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-cS-Wxk">
+                                <rect key="frame" x="16" y="513" width="288" height="47"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.36614724859999997" green="0.36614724859999997" blue="0.36614724859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDone:" destination="9gl-fJ-HPP" eventType="touchUpInside" id="JKo-dx-1GO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wh3-YI-1Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2529" y="-1567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DwB-A9-v0W">
@@ -2068,6 +2126,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Splash_logo.png" width="257" height="51"/>
         <image name="btnColor.jpg" width="74" height="21"/>
         <image name="btnNow.jpg" width="111" height="34"/>
         <image name="btnSize.jpg" width="48" height="20"/>
@@ -2082,6 +2141,7 @@
         <image name="like_5.png" width="35" height="52"/>
         <image name="logo.png" width="800" height="172"/>
         <image name="photo.png" width="32" height="32"/>
+        <image name="selfie_example_1.jpg" width="351" height="636"/>
         <image name="shoe_big.png" width="141" height="121"/>
         <image name="shoe_thumb_1.png" width="42" height="36"/>
         <image name="shoe_thumb_2.png" width="42" height="36"/>
@@ -2097,5 +2157,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ch8-iy-UU1"/>
+        <segue reference="3mJ-dY-WWW"/>
     </inferredMetricsTieBreakers>
 </document>
