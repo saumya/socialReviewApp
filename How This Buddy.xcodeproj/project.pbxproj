@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99002E321B0CC48F004C9EEE /* profile_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 99002E311B0CC48F004C9EEE /* profile_photo.png */; };
 		99040FC41A3FE7DE00A55269 /* btn_icon_camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99040FC31A3FE7DE00A55269 /* btn_icon_camera.jpg */; };
 		9927F0E11A3B8AAD001781B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927F0E01A3B8AAD001781B3 /* Foundation.framework */; };
 		9927F0E31A3B8AAD001781B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927F0E21A3B8AAD001781B3 /* CoreGraphics.framework */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99002E311B0CC48F004C9EEE /* profile_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_photo.png; sourceTree = "<group>"; };
 		99040FC31A3FE7DE00A55269 /* btn_icon_camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = btn_icon_camera.jpg; sourceTree = "<group>"; };
 		9927F0DD1A3B8AAD001781B3 /* How This Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How This Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9927F0E01A3B8AAD001781B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -241,6 +243,7 @@
 		9927F1151A3B8CDD001781B3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				99002E311B0CC48F004C9EEE /* profile_photo.png */,
 				9990BC771B0C69C90097DA1B /* do-not-like.png */,
 				9990BC781B0C69CA0097DA1B /* like.png */,
 				9990BC791B0C69CA0097DA1B /* not-sure.png */,
@@ -412,6 +415,7 @@
 				992DE0891A3C28BA007EA014 /* shoe_thumb_2.png in Resources */,
 				9927F11B1A3B8DF6001781B3 /* Splash.png in Resources */,
 				99BEDABC1A435E7D00D41013 /* do_not_like_1.png in Resources */,
+				99002E321B0CC48F004C9EEE /* profile_photo.png in Resources */,
 				9927F0F41A3B8AAD001781B3 /* Main.storyboard in Resources */,
 				99BEDAB81A435AA200D41013 /* like_5.png in Resources */,
 				99BEDAC11A43627900D41013 /* small_like.png in Resources */,
